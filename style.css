@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+
+header {
+  background: #f13515;
+  text-align: center;
+  padding: 15px;
+  flex: 0;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main .to-do-list {
+  background: #f1f1f1;
+  padding: 15px;
+  border: 1px solid black;
+  border-radius: 25px;
+}
+
+main .to-do-list .task {
+  margin: 0;
+  background: #f1f1f1;
+  padding: 15px;
+}
+
+.to-do-list .task .inpTask {
+  color: #000;
+  padding: 15px;
+  border-radius: 15px;
+}
+.to-do-list .tasks {
+  list-style: none;
+  background-color: whitesmoke;
+  color: #010101;
+  border-bottom: 1px solid black;
+}
+
+.to-do-list .tasks li {
+  border-bottom: 1px solid black;
+  text-align: justify;
+  align-items: center;
+  list-style: none;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+main .to-do-list .tasks li p {
+  color: #010101;
+}
+
+.to-do-list .tasks li::hover {
+  background-color: #010101;
+}
+
+.to-do-list .tasks li button {
+  background-color: #f13515;
+
+  padding: 5px;
+  border-radius: 15px;
+}
+
+.to-do-list .tasks li button::hover {
+  background-color: #f13515;
+  cursor: pointer;
+}
+
+footer {
+  flex: 0;
+  padding: 15px;
+  text-align: center;
+  background: #010101;
+}
+
+footer ul li {
+  list-style: none;
+}
